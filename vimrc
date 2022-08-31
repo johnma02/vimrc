@@ -21,4 +21,3 @@ inoremap {;<CR> {<CR>};<ESC>O
 set makeprg=g++-11\ -std=c++17\ -o\ %:r\ %\
 autocmd filetype cpp nnoremap <F9> :w <bar> :make<CR>
 autocmd filetype cpp nnoremap <F10> :vert terminal ./%:r<CR>
-autocmd filetype cpp nnoremap <F11> :!./%:r<CR>
