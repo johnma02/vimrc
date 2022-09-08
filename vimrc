@@ -14,6 +14,10 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
+let &t_ti.="\e[1 q"
+let &t_SI.="\e[5 q"
+let &t_EI.="\e[1 q"
+let &t_te.="\e[0 q"
 
 "autocmd BufNewFile *.cpp 0r ~/.config/vim/template.cpp
 "if you want to make a template, create the template in this directory.
